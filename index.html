@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation — Inference</title>
+
+  <link rel="icon" type="image/svg+xml" href="inference.svg" />
+  <link rel="shortcut icon" href="inference.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html, body { font-family: 'Inter', sans-serif; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
+    pre { tab-size: 2; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- ============ DOCUMENTATION SECTION HEADER ============ -->
+  <header class="sticky top-0 z-30 w-full border-b border-gray-200 bg-white/90 backdrop-blur">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12">
+      <div class="flex h-16 items-center justify-between gap-4">
+
+        <!-- Logo -->
+        <a href="https://inference.uno/onboarding?ref=5D02E248" class="flex items-center shrink-0">
+          <img src="inference.svg" alt="Inference" class="h-6 w-auto" />
+        </a>
+
+        <!-- Section nav -->
+        <nav class="hidden md:flex items-center gap-6 min-w-0">
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Home</a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Analytics</a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">API Keys</a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="text-sm font-semibold text-gray-900 border-b-2 border-black pb-0.5 -mb-0.5">Docs</a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Support</a>
+        </nav>
+
+        <!-- Header actions -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="hidden sm:inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50">
+            Rewards
+          </a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="inline-flex items-center justify-center rounded-lg bg-black px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800">
+            Dashboard
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="bg-white">
+    <div class="p-8 lg:p-12">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Header -->
+        <header class="mb-8">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Documentation</p>
+          <h1 class="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">Get Started with Inference</h1>
+          <p class="mt-2 text-base lg:text-lg text-gray-500">
+            Integrate Inference directly into your IDE or workflow in 2 minutes.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <a href="https://inference.uno/onboarding?ref=5D02E248"
+               class="inline-flex items-center justify-center rounded-lg bg-black px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+              Start Integration
+            </a>
+            <a href="https://inference.uno/onboarding?ref=5D02E248"
+               class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50">
+              View API Keys
+            </a>
+          </div>
+        </header>
+
+        <!-- Information Card -->
+        <section class="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+          <div class="p-6 lg:p-7">
+            <div class="flex items-center gap-2 mb-4">
+              <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="0.7" fill="currentColor"/></svg>
+              <h2 class="text-lg font-semibold text-gray-900">Account Tiers &amp; Routing</h2>
+            </div>
+            <p class="text-sm leading-relaxed text-gray-600">
+              All Standard (Free) accounts are provisioned with $1.00 in API credits upon creation. Credit consumption varies by usage, but this allocation is sufficient for meaningful exploration of the platform.
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-gray-600">
+              Model selection is handled automatically for Standard accounts — the platform routes requests to the most appropriate model for your prompt. To access specific models or unlock priority routing, upgrade your plan or top up credits.
+            </p>
+
+            <!-- Highlight Box -->
+            <div class="mt-5 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3.5">
+              <p class="text-sm leading-relaxed text-blue-900">
+                <span class="font-semibold">Remember:</span> API credits always get consumed first! Top up credits to choose your own models. Once topped up, you can explicitly request any premium model within CC or CX.
+              </p>
+              <a href="https://inference.uno/onboarding?ref=5D02E248"
+                 class="mt-3 inline-flex items-center justify-center rounded-md bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-blue-700">
+                Top up Credits
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <div class="mt-10 border-b border-gray-200">
+          <div class="flex items-center gap-6 sm:gap-8 overflow-x-auto">
+            <a href="https://inference.uno/onboarding?ref=5D02E248"
+               class="whitespace-nowrap border-b-2 border-black pb-3 text-sm font-semibold text-gray-900">Claude Code (CC)</a>
+            <a href="https://inference.uno/onboarding?ref=5D02E248"
+               class="whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 transition">Codex (CX)</a>
+            <a href="https://inference.uno/onboarding?ref=5D02E248"
+               class="whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 transition">Custom IDEs (API)</a>
+          </div>
+        </div>
+
+        <p class="mt-5 text-sm leading-relaxed text-gray-600">
+          Follow these precise steps to permanently configure the official Claude Code CLI to route its intelligence directly through the Inference proxy network.
+        </p>
+
+        <!-- Steps -->
+        <ol class="mt-8 space-y-8">
+
+          <!-- Step 1 -->
+          <li class="flex gap-4">
+            <span class="mt-0.5 h-7 w-7 shrink-0 rounded-full bg-gray-200 text-gray-700 text-xs font-bold flex items-center justify-center">1</span>
+            <div class="min-w-0 flex-1">
+              <h3 class="text-base font-semibold text-gray-900">Obtain your API Key</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-600">
+                First, navigate to the API Keys page, generate a new access key, and copy it to your clipboard. This will act as your authentication token.
+              </p>
+              <a href="https://inference.uno/onboarding?ref=5D02E248"
+                 class="mt-3 inline-flex items-center justify-center rounded-lg bg-black px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800">
+                Generate API Key
+              </a>
+            </div>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="flex gap-4">
+            <span class="mt-0.5 h-7 w-7 shrink-0 rounded-full bg-gray-200 text-gray-700 text-xs font-bold flex items-center justify-center">2</span>
+            <div class="min-w-0 flex-1">
+              <h3 class="text-base font-semibold text-gray-900">Install &amp; Initialize Claude</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-600">
+                If you haven't already, install Claude Code globally via npm. After it installs, run it once and immediately exit. This forces your OS to generate the hidden .claude configuration folder.
+              </p>
+              <pre class="mt-3 overflow-x-auto rounded-lg bg-gray-900 px-4 py-3.5 text-[13px] leading-relaxed text-gray-100"><code>npm install -g @anthropic-ai/claude-code
+claude
+# Press Ctrl+C or type /exit to close it</code></pre>
+            </div>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="flex gap-4">
+            <span class="mt-0.5 h-7 w-7 shrink-0 rounded-full bg-gray-200 text-gray-700 text-xs font-bold flex items-center justify-center">3</span>
+            <div class="min-w-0 flex-1">
+              <h3 class="text-base font-semibold text-gray-900">Modify settings.json</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-600">
+                Instead of exporting environment variables manually, you can set them globally in Claude's configuration file.
+              </p>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-600">
+                Navigate to <code class="rounded bg-gray-100 px-1.5 py-0.5 text-[13px] font-medium text-gray-800">~/.claude/settings.json</code> and paste the following configuration:
+              </p>
+              <pre class="mt-3 overflow-x-auto rounded-lg bg-gray-900 px-4 py-3.5 text-[13px] leading-relaxed text-gray-100"><code>{
+  "env": {
+    "ANTHROPIC_API_KEY": "YOUR_INFERENCE_API_KEY",
+    "ANTHROPIC_BASE_URL": "https://api.inference.uno",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  }
+}</code></pre>
+              <p class="mt-2.5 text-xs leading-relaxed text-gray-500">
+                Note: Replace <span class="font-medium text-gray-700">YOUR_INFERENCE_API_KEY</span> with your copied key. The base URL strictly targets the root port because Claude appends /v1/messages automatically.
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 4 -->
+          <li class="flex gap-4">
+            <span class="mt-0.5 h-7 w-7 shrink-0 rounded-full bg-gray-200 text-gray-700 text-xs font-bold flex items-center justify-center">4</span>
+            <div class="min-w-0 flex-1">
+              <h3 class="text-base font-semibold text-gray-900">Launch Claude</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-gray-600">
+                Start Claude Code as usual. Your requests will now securely tunnel through the proxy forever.
+              </p>
+              <pre class="mt-3 overflow-x-auto rounded-lg bg-gray-900 px-4 py-3.5 text-[13px] leading-relaxed text-gray-100"><code>claude</code></pre>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Footer Action -->
+        <div class="mt-12 flex flex-wrap justify-end gap-3">
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50">
+            Read the Docs
+          </a>
+          <a href="https://inference.uno/onboarding?ref=5D02E248"
+             class="inline-flex items-center justify-center rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+            Continue to Dashboard
+          </a>
+        </div>
+
+        <!-- Page Footer / User Guide -->
+        <footer class="mt-12 border-t border-gray-200 pt-6 pb-4">
+          <a href="https://inference.uno/onboarding?ref=5D02E248" class="flex items-center gap-3 rounded-lg p-1 -m-1 hover:bg-gray-50 transition">
+            <span class="h-9 w-9 shrink-0 rounded-full bg-gray-900 text-white text-sm font-semibold flex items-center justify-center">G</span>
+            <span class="min-w-0">
+              <span class="block text-sm font-semibold text-gray-900 truncate">Inference Guide</span>
+              <span class="block text-xs text-gray-500 truncate">guide@inference.uno</span>
+            </span>
+          </a>
+        </footer>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
